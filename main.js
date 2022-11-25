@@ -100,13 +100,12 @@ console.log (o+p+q)
 
 /*EX 3.0
 const array= ["Arno Volts" ,"Aurélien Mariaule" ,"Aurore Lemaire" ,"Benjamin Porsont" ,"Céline Verreydt" ,"Corentin Miserque" ,"Dominique Coppée" ,"Edouard de Romrée de Vichenet" ,"Hugo Goorickx ","Jofrey Houyoux" ,"Jonathan Manes" ,"jonathan bajoux" ,"Laura Wilhelmi" ,"Lysie Soyez" ,"Marnie Benalia" ,"Mathilde Cornelis" ,"Milo Bonnet" ,"Nadim El Nakadi" ,"Nathalie Vanden Abeele" ,"Nathalie Goffette" ,"Nour Everaert" ,"Pierre Mauriello" ,"Quentin Bource ","Virginie Dourson"];
-
-for (const element of array1) {
+for (const element of array) {
     console.log(element);
 }
 */
 
-/*3.1
+/*EX 3.1
 function sumArray(array){
     let sum = 0
     for (let i = 0; i < 
@@ -119,4 +118,32 @@ function sumArray(array){
 sumArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 */
 
-/*3.2*/
+/*EX 3.2
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+let sum = 0;
+for (var number of arr) {
+    sum += number;
+}
+average = sum / arr.length;
+console.log(average);
+*/
+
+/*EX 3.3
+const array = ["apple", "peach", "stawberrie", "cherry", "banana", "pear", "melon"]; 
+const array2 = [...array];
+array.push("orange");
+console.log(array);
+console.log(array2);
+
+const array = ["apple", "peach", "stawberrie", "cherry", "banana", "pear", "melon"]; 
+const array2 = [];
+array2.push("apple", "peach", "stawberrie", "cherry", "banana", "pear", "melon");
+console.log(array);
+console.log(array2);
+*/
+
+/*EX 3.4
+let arrayOfNumbers = [4, 122, 62, 1, 70, -40];
+console.log(Math.max(...arrayOfNumbers));
+console.log(Math.min(...arrayOfNumbers));
+*/
