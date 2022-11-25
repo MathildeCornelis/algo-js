@@ -108,8 +108,7 @@ for (const element of array) {
 /*EX 3.1
 function sumArray(array){
     let sum = 0
-    for (let i = 0; i < 
-    array.length; i += 1) {
+    for (let i = 0; i < array.length; i += 1) {
     sum += array[i]
     }
     console.log(sum)
@@ -135,15 +134,69 @@ array.push("orange");
 console.log(array);
 console.log(array2);
 
-const array = ["apple", "peach", "stawberrie", "cherry", "banana", "pear", "melon"]; 
-const array2 = [];
+const array3 = ["apple", "peach", "stawberrie", "cherry", "banana", "pear", "melon"]; 
+const array4 = [];
 array2.push("apple", "peach", "stawberrie", "cherry", "banana", "pear", "melon");
-console.log(array);
-console.log(array2);
+console.log(array3);
+console.log(array4);
 */
 
 /*EX 3.4
 let arrayOfNumbers = [4, 122, 62, 1, 70, -40];
 console.log(Math.max(...arrayOfNumbers));
 console.log(Math.min(...arrayOfNumbers));
+*/
+
+/*EX 4.1
+let a = parseInt(prompt('Length of the rectangle.'));
+let b = parseInt(prompt('Witdh of the rectangle.'));
+function calcSurface(a, b) {
+    return a * b;
+}
+console.log("The multiplication is " + parseInt(calcSurface(a, b)));
+*/
+
+/*EX 4.2
+function rand10() {
+        return Math.floor(Math.random() *10) + 1;
+}
+console.log(rand10());
+*/
+
+/*EX 4.3
+function rand10() {
+    return Math.floor(Math.random() *10) + 1;
+}
+function multiRand(n) {
+    let arr =[];
+    for (let i=1; i<=n; i++) {
+        arr.push(rand10())
+    }
+    return arr
+}
+let n = prompt('How many random numbers do you want to generate')
+console.log(multiRand(n));
+
+1) la fonction rand10() génère aléatoirement des chiffres de 1 à 10.
+2) la fonction multiRand(n) génère aléatoirement n chiffres.
+    2.1) let arr = [] crée un tableau.
+    2.2) for (let i=1; i<=n; i++){} initialise la variable i avec une valeur de 1, lui donne une condition et une incrémentation.
+        2.2.1) arr.push(rand10()) injecte la variable i dans la fonction rand10.
+    2.3) return arr arrête la fonction
+3) let n = prompt('How many random numbers do you want to generate') demande combien de nombre le programme doit générer.
+4) console.log(multiRand(6)) affiche dans la console la fonction multirand() avec un nombre de répétitions donné. 
+*/
+
+/*EX 4.4
+let inputAr= ["Arno Volts" ,"Aurélien Mariaule" ,"Aurore Lemaire" ,"Benjamin Porsont" ,"Céline Verreydt" ,"Corentin Miserque" ,"Dominique Coppée" ,"Edouard de Romrée de Vichenet" ,"Hugo Goorickx ","Jofrey Houyoux" ,"Jonathan Manes" ,"jonathan bajoux" ,"Laura Wilhelmi" ,"Lysie Soyez" ,"Marnie Benalia" ,"Mathilde Cornelis" ,"Milo Bonnet" ,"Nadim El Nakadi" ,"Nathalie Vanden Abeele" ,"Nathalie Goffette" ,"Nour Everaert" ,"Pierre Mauriello" ,"Quentin Bource ","Virginie Dourson"];
+let n = prompt('ngnbk')
+
+function pickLearner(inputAr, n) {  
+    let arr = []
+    for (i=1; i<=n; i++){
+        arr.push(inputAr[Math.floor(Math.random() *24)]);
+    };
+    return arr
+}
+console.log(pickLearner(inputAr, n))
 */
