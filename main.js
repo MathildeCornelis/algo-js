@@ -189,7 +189,7 @@ console.log(multiRand(n));
 
 /*EX 4.4
 let inputAr= ["Arno Volts" ,"Aurélien Mariaule" ,"Aurore Lemaire" ,"Benjamin Porsont" ,"Céline Verreydt" ,"Corentin Miserque" ,"Dominique Coppée" ,"Edouard de Romrée de Vichenet" ,"Hugo Goorickx ","Jofrey Houyoux" ,"Jonathan Manes" ,"jonathan bajoux" ,"Laura Wilhelmi" ,"Lysie Soyez" ,"Marnie Benalia" ,"Mathilde Cornelis" ,"Milo Bonnet" ,"Nadim El Nakadi" ,"Nathalie Vanden Abeele" ,"Nathalie Goffette" ,"Nour Everaert" ,"Pierre Mauriello" ,"Quentin Bource ","Virginie Dourson"];
-let n = prompt('ngnbk')
+let n = prompt('Enter a number between 1 and 23')
 
 function pickLearner(inputAr, n) {  
     let arr = []
@@ -200,3 +200,41 @@ function pickLearner(inputAr, n) {
 }
 console.log(pickLearner(inputAr, n))
 */
+
+/*EX 4.5
+let x1 = prompt('The latitude of A');
+let x2 = prompt('The longitude of A');
+let y1 = prompt('The latitude of B');
+let y2 = prompt('The longitude of B');
+function calcDistance (x1, x2, y1, y2){
+    let y = x2 - x1;
+    let x = y2 - y1;
+    return Math.sqrt((x * x) + (y * y));
+};
+console.log('The difference between A and B is ' + calcDistance (x1, x2, y1, y2));
+*/
+
+/*EX 4.6
+let a = prompt('Enter a number.');
+
+function factorial(a){
+    let answer = 1;
+    if (a == 0 || a == 1){
+      return answer;
+    }else{
+      for(var i = a; i > 1; i--){
+        answer = answer * i;
+      }
+      return answer;
+    }  
+  }
+  console.log("The factorial of " + a + " is " + factorial(a));
+  */
+
+/*EX 5.1*/
+let Name = prompt("What's the name of your favorite series")
+let Year = prompt("What's its year of production?")
+let Cast = prompt("What are the names of the cast members of this series?")
+function askTvService() {
+
+}
