@@ -1,4 +1,18 @@
 
+/*EX 1.0
+console.log(10 + 5);
+console.log(10 - 5);
+console.log(10 * 5);
+console.log(10 / 5);
+console.log(10 % 5);
+*/
+
+/*EX 1.1*/
+let firstName = "Mathilde";
+
+console.log(firstName);
+
+
 /*let name = 'Mathilde';
 let firstName = 'Cornelis';
 let city = 'Ransart';
@@ -231,10 +245,75 @@ function factorial(a){
   console.log("The factorial of " + a + " is " + factorial(a));
   */
 
-/*EX 5.1*/
-let Name = prompt("What's the name of your favorite series")
-let Year = prompt("What's its year of production?")
-let Cast = prompt("What are the names of the cast members of this series?")
-function askTvService() {
-
+/*EX 5.1
+function askTvSerie() {
+    let mySerie = {
+        name : prompt('Enter the name of your favorite TV serie.'),
+        year : prompt('Enter the year of your favorite serie.'),
+        cast : []
+    }
+    let choose = true;
+    while (choose) {
+        let useradd = prompt ('Enter cast members names.');
+        choose = useradd.length !== 0;
+        if(choose){
+            mySerie.cast.push(useradd);
+        }
+    }
+    return mySerie;
 }
+console.log(JSON.stringify(askTvSerie()));
+*/
+
+/*EX 5.2
+function askTvSerie() {
+    let mySerie = {
+        name : prompt('Enter the name of your favorite TV serie.'),
+        year : prompt('Enter the year of your favorite serie.'),
+        castmember : []
+    }
+    let choose = true;
+    while (choose) {
+        let useradd = prompt ('Enter cast members names.');
+        choose = useradd.length !== 0;
+        if(choose){
+            mySerie.castmember.push(useradd);
+        }
+    }
+    return mySerie;
+}
+
+function randomizeCast(tvSerie){
+    let cast = tvSerie.castmember;
+    for (let i=0; i< cast.length; i++){
+        let temp = cast[i];
+        let randIndex = Math.floor(Math.random() * cast.length)
+        cast[i] = cast[randIndex]
+        cast[randIndex] = temp
+    }
+    return cast; 
+}
+
+console.log(randomizeCast(askTvSerie()));
+*/
+
+/*EX 6.1
+class Circle{
+    constructor(xPas, yPas, radius){
+        this.xPas = xPas;
+        this.yPas = yPas;
+        this.radius = radius;
+    }
+    move(xOffset, yOffset){
+        this.xPas += xOffset;
+        this.yPas += yOffset;
+    }
+    get surface(){
+        return this.radius * this.radius * Math.PI;
+    }
+}
+
+let circle1 = new Circle(12, 24, 2);
+circle1.move(1, 0);
+console.log(`x : ${circle1.xPas}\ny : ${circle1.yPas}\nsurface : ${circle1.surface}`);
+*/
