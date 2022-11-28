@@ -7,16 +7,17 @@ console.log(10 / 5);
 console.log(10 % 5);
 */
 
-/*EX 1.1*/
+/*EX 1.1
 let firstName = "Mathilde";
-
 console.log(firstName);
+*/
 
-
-/*let name = 'Mathilde';
+/*EX 1.2
+let name = 'Mathilde';
 let firstName = 'Cornelis';
 let city = 'Ransart';
-console.log("Your name is "+name+' '+firstName+' and you live in '+city+'.');*/
+console.log("Your name is "+name+' '+firstName+' and you live in '+city+'.');
+*/
 
 /*EX 2.1
 let age = prompt("Enter your age here.");
