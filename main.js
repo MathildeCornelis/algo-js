@@ -202,7 +202,7 @@ console.log(multiRand(n));
 4) console.log(multiRand(6)) affiche dans la console la fonction multirand() avec un nombre de répétitions donné. 
 */
 
-/*EX 4.4
+/*EX 4.4*/
 let inputAr= ["Arno Volts" ,"Aurélien Mariaule" ,"Aurore Lemaire" ,"Benjamin Porsont" ,"Céline Verreydt" ,"Corentin Miserque" ,"Dominique Coppée" ,"Edouard de Romrée de Vichenet" ,"Hugo Goorickx ","Jofrey Houyoux" ,"Jonathan Manes" ,"jonathan bajoux" ,"Laura Wilhelmi" ,"Lysie Soyez" ,"Marnie Benalia" ,"Mathilde Cornelis" ,"Milo Bonnet" ,"Nadim El Nakadi" ,"Nathalie Vanden Abeele" ,"Nathalie Goffette" ,"Nour Everaert" ,"Pierre Mauriello" ,"Quentin Bource ","Virginie Dourson"];
 let n = prompt('Enter a number between 1 and 23')
 
@@ -214,7 +214,6 @@ function pickLearner(inputAr, n) {
     return arr
 }
 console.log(pickLearner(inputAr, n))
-*/
 
 /*EX 4.5
 let x1 = prompt('The latitude of A');
